@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from metar_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('metar/ping/', views.ping, name='ping'),
+  
 ]
