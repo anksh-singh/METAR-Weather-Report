@@ -42,14 +42,21 @@ Create a `.env` file in your project root directory and add the following:
 BASE_URL=http://tgftp.nws.noaa.gov/data/observations/metar/stations/
 
 ##Install Project Dependencies
+```bash
 Command: pip3 install -r requirements.txt
+ ```
 
 ##install redis & Run it locally 
-For me - Command: brew install redis (MacOS)  Note : For other OS it may varies
+
+```bash
+Command: brew install redis (MacOS)  Note : For other OS it may varies
 Run redis locally -  brew services start redis
+```
 
 ##Run the local server
+```bash
 Comand: python manage.py runserver
+```bash
 
 ##Access the APIs like this: 
 http://127.0.0.1:8000/metar/info?scode=KHUA
