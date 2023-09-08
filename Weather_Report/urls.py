@@ -20,5 +20,5 @@ from metar_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('metar/ping/', views.ping, name='ping'),
-  
+    path('metar/info/', views.fetch_weather_details, name='weather_details'),
 ]
