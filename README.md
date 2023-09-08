@@ -1,7 +1,7 @@
 # Weather-Report-METAR
 
-## Points:
-- I'm using MacOS
+## Please Consider:
+- OS which I'm suing - MacOS
 - Based on my research & Understanding I'm fetching the METAR data in the following ways:
 Received data from METAR : 
  "2023/09/08 11:55
@@ -23,12 +23,6 @@ Fetch METAR weather data for specific station codes. This API returns wind direc
 
 ## Project Setup
 
-### Requirements
-
-- Python 3.x
-- Redis
-- macOS (Other operating systems should work, but commands may vary)
-
 ### Clone the Repository
 
 1. Open the terminal.
@@ -38,7 +32,7 @@ Fetch METAR weather data for specific station codes. This API returns wind direc
     git clone https://github.com/anksh-singh/Weather-Report.git
     ```
 
-## Environment Variables
+#Environment Variables
 
 Create a `.env` file in your project root directory and add the following:
 
@@ -55,7 +49,7 @@ Run redis locally -  brew services start redis
 ##Run the local server
 Comand: python manage.py runserver
 
-##Now access the APIs 
+##Access the APIs like this: 
 http://127.0.0.1:8000/metar/info?scode=KHUA
 http://127.0.0.1:8000/metar/info?scode=KHUA&nocache=1
 
