@@ -120,8 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-
 # Redis settings
 CACHES = {
     "default": {
